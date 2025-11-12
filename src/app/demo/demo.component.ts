@@ -1,10 +1,11 @@
 import { type BooleanInput } from '@angular/cdk/coercion';
+import { CommonModule, JsonPipe } from '@angular/common';
 import { booleanAttribute, Component, input, Input } from '@angular/core';
 
 @Component({
   selector: 'demo-comp',
   standalone: true,
-  imports: [],
+  imports: [CommonModule, JsonPipe],
   templateUrl: './demo.component.html',
   styleUrl: './demo.component.css'
 })
