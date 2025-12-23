@@ -11,6 +11,11 @@ import { booleanAttribute, Component, input, Input } from '@angular/core';
 })
 export class DemoComponent {
 
+  
+  @Input() myDecoratorDefaultTrue?: boolean = true;
+  
+  @Input() myDecoratorDefaultFalse?: boolean = false;
+
   @Input({ transform: booleanAttribute }) myDecoratorBoolDefaultTrue: boolean = true;
 
   @Input({ transform: booleanAttribute }) myDecoratorBoolDefaultFalse: boolean = false;

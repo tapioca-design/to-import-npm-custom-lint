@@ -2,10 +2,14 @@
   
 <h1>Custom lint</h1>
 
+  <demo-comp myBoolRequired myDecoratorDefaultTrue   />
+
+  <demo-comp myBoolRequired myDecoratorDefaultFalse  />
+
   <demo-comp myBoolRequired [myDecoratorBoolDefaultTrue]="true" [myDecoratorBoolDefaultFalse]="true"  />
   
   <demo-comp myBoolRequired myDecoratorBoolDefaultTrue myDecoratorBoolDefaultFalse  />
-  
+    
   <demo-comp myBoolRequired [myDecoratorBoolDefaultTrue]="false" [myDecoratorBoolDefaultFalse]="false"  />
 
   <demo-comp myBoolRequired [myBoolDefaultTrue]="true" [myBoolDefaultFalse]="true"  />
@@ -18,7 +22,7 @@
   
   <demo-comp myBoolRequired [myBoolDefaultTrue]="true"  />
   
-  <demo-comp myBoolRequired [myBoolDefaultTrue]="true" ></demo-comp>
+  <demo-comp myBoolRequired [myBoolDefaultTrue]="true" />
 
   <demo-comp myBoolRequired [myBoolDefaultTrue]="counter === 3" />
 
@@ -30,7 +34,7 @@
 
   <demo-comp myBoolRequired myBoolDefaultTrue myBoolDefaultFalse />
 
-  <demo-comp myBoolRequired myBoolDefaultTrue ></demo-comp>
+  <demo-comp myBoolRequired myBoolDefaultTrue />
   
 
 </main>
