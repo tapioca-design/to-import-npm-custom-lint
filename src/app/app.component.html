@@ -2,38 +2,36 @@
   
 <h1>Custom lint</h1>
 
+  <h2>myDecoratorDefault</h2>
   <demo-comp myBoolRequired myDecoratorDefaultTrue   />
-
   <demo-comp myBoolRequired myDecoratorDefaultFalse  />
-
   <demo-comp myBoolRequired [myDecoratorBoolDefaultTrue]="true" [myDecoratorBoolDefaultFalse]="true"  />
   
+    <h2>myDecoratorBoolDefault</h2>
   <demo-comp myBoolRequired myDecoratorBoolDefaultTrue myDecoratorBoolDefaultFalse  />
-    
   <demo-comp myBoolRequired [myDecoratorBoolDefaultTrue]="false" [myDecoratorBoolDefaultFalse]="false"  />
 
-  <demo-comp myBoolRequired [myBoolDefaultTrue]="true" [myBoolDefaultFalse]="true"  />
-
-  <demo-comp myBoolRequired [myBoolDefaultTrue]="false" [myBoolDefaultFalse]="false"  />
+  <h2>myDefault</h2>
+  <demo-comp myBoolRequired [myDefaultTrue]="false"  />
+  <demo-comp myBoolRequired [myDefaultFalse]="true"  />
+  <demo-comp myBoolRequired [myRequired]="true" />
   
-  <demo-comp myBoolRequired [myBoolDefaultFalse]="true"  />
-   
+  <h2>myBoolDefault</h2>
   <demo-comp myBoolRequired [myBoolDefaultFalse]="false"  />
-  
   <demo-comp myBoolRequired [myBoolDefaultTrue]="true"  />
-  
   <demo-comp myBoolRequired [myBoolDefaultTrue]="true" />
-
+  <demo-comp myBoolRequired [myBoolDefaultTrue]="true" [myBoolDefaultFalse]="true"  />
+  <demo-comp myBoolRequired [myBoolDefaultTrue]="false" [myBoolDefaultFalse]="false"  />
+  <demo-comp myBoolRequired [myBoolDefaultFalse]="true"  />
+  
+  <h2>Computed (valid)</h2>
   <demo-comp myBoolRequired [myBoolDefaultTrue]="counter === 3" />
-
   <demo-comp myBoolRequired [myBoolDefaultTrue]="counter === 0" />
-
   <demo-comp myBoolRequired [myBoolDefaultTrue]="myBoolVar" />
-
+  
+  <h2>Valid</h2>
   <demo-comp myBoolRequired myBoolDefaultTrue />
-
   <demo-comp myBoolRequired myBoolDefaultTrue myBoolDefaultFalse />
-
   <demo-comp myBoolRequired myBoolDefaultTrue />
   
 

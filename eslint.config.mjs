@@ -37,6 +37,7 @@ export default defineConfig([
     ),
     plugins: {
       '@angular-eslint': angularEslint,
+      '@yoo-digital/angular': yooAngularPlugin,
       rxjs,
     },
     rules: {
@@ -62,6 +63,7 @@ export default defineConfig([
         },
       ],
       '@typescript-eslint/no-inferrable-types': 'off',
+      '@yoo-digital/angular/boolean-attribute-ts': 'error',
     },
   },
   {
@@ -90,7 +92,7 @@ export default defineConfig([
         },
       ],
       '@angular-eslint/template/prefer-self-closing-tags': 'error',
-      '@yoo-digital/angular/prefer-boolean-attribute-shorthand': 'error',
+      '@yoo-digital/angular/boolean-attribute-html': 'error',
     },
   },
 ]);
