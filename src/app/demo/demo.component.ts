@@ -19,6 +19,7 @@ export class DemoComponent {
 
   myDefaultTrue = input<boolean>(true);
   myDefaultFalse = input<boolean>(false);
+  // myRequired = input.required<boolean>();
 
   myBoolDefaultTrue = input<boolean, BooleanInput>(true, {
     transform: booleanAttribute,
@@ -26,5 +27,10 @@ export class DemoComponent {
   myBoolDefaultFalse = input<boolean, BooleanInput>(false, {
     transform: booleanAttribute,
   });
+  // myBoolRequired = input.required<boolean, BooleanInput>({
+  //   transform: booleanAttribute,
+  // });
+
+
 
 }

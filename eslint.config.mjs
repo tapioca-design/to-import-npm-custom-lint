@@ -63,7 +63,7 @@ export default defineConfig([
         },
       ],
       '@typescript-eslint/no-inferrable-types': 'off',
-      '@yoo-digital/angular/boolean-attribute-ts': 'error',
+      '@yoo-digital/angular/boolean-input': 'error',
     },
   },
   {
@@ -92,7 +92,7 @@ export default defineConfig([
         },
       ],
       '@angular-eslint/template/prefer-self-closing-tags': 'error',
-      '@yoo-digital/angular/boolean-attribute-html': 'error',
+      '@yoo-digital/angular/boolean-attribute-shorthand': 'error',
     },
   },
 ]);
