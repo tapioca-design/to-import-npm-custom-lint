@@ -3,13 +3,15 @@
 <h1>Custom lint</h1>
 
   <h2>myDecoratorDefault</h2>
-  <demo-comp  myDecoratorDefaultTrue   />
-  <demo-comp  myDecoratorDefaultFalse  />
+  <!-- <demo-comp  myDecoratorDefaultTrue   />
+  <demo-comp  myDecoratorDefaultFalse  /> -->
+  <demo-comp  [myDecoratorDefaultTrue]="false"  />
   
   <h2>myDecoratorBoolDefault</h2>
   <demo-comp  [myDecoratorBoolDefaultTrue]="true" [myDecoratorBoolDefaultFalse]="true"  />
-  <demo-comp  myDecoratorBoolDefaultTrue myDecoratorBoolDefaultFalse  />
   <demo-comp  [myDecoratorBoolDefaultTrue]="false" [myDecoratorBoolDefaultFalse]="false"  />
+  <demo-comp  myDecoratorBoolDefaultTrue myDecoratorBoolDefaultFalse  />
+  <demo-comp  />
 
   <h2>myDefault</h2>
   <demo-comp  [myDefaultTrue]="false"  />
@@ -32,7 +34,7 @@
   <h2>Valid</h2>
   <demo-comp  myBoolDefaultTrue />
   <demo-comp  myBoolDefaultTrue myBoolDefaultFalse />
-  <demo-comp  myBoolDefaultTrue />
+  <demo-comp  myBoolDefaultFalse />
   
 
 </main>
