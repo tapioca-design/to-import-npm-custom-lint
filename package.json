@@ -107,7 +107,7 @@
     "@vitest/coverage-v8": "~3.2.4",
     "@yoo-digital/eslint-config-angular": "20.0.0",
     "@yoo-digital/eslint-config-base": "3.0.0",
-    "@yoo-digital/eslint-plugin-angular": "*",
+    "@yoo-digital/eslint-plugin-angular": "^3.1.5",
     "@yoo-digital/prettier": "~1.2.1",
     "@yoo-digital/stylelint-config-sass": "~3.0.3",
     "angular-eslint": "^20",
